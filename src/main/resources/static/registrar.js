@@ -1,0 +1,37 @@
+$(document).ready(function() {
+  actualizarmail();
+});
+
+ //esta funcion es para devolver el email con el token
+ function actualizarmail()   {
+  document.getElementById('demo10') = localStorage.email;
+  
+    }
+
+async function registrarUsuario() {
+ let datos = {};
+ datos.nombre = document.getElementById('txtNombre').value;
+ datos.apellido = document.getElementById('txtApellido').value;
+ datos.email = document.getElementById('txtEmail').value;
+ datos.clave = document.getElementById('txtPassword').value;
+
+ let repetirPassword = document.getElementById('txtRepetirPassword').value;
+
+ if (repetirPassword != datos.clave) {
+   alert('La contraseña que escribiste es diferente.');
+   return;
+ }
+
+ const request = await fetch('usuarios', {
+   method: 'POST',
+   headers: {
+     'Accept': 'application/json',
+     'Content-Type': 'application/json'
+   },
+   body: JSON.stringify(datos)
+ });
+ alert("La cuenta fue creada con exito!");
+
+ window.location.href = 'login.html'
+
+}

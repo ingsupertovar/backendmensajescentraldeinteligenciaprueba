@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+    <p id="demo90"></p>
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Registrar Tipificacion</h1>
+                            </div>
+                            <form class="user" id = "formulario">
+                                
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="txtFecha"
+                                            placeholder="Fecha">
+                                    </div>
+                                       
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="txtIdinteraccion"
+                                            placeholder="Idinteraccion">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="txtAgente"
+                                            placeholder="Agente">
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="txtTipificacion"
+                                        placeholder="Tipificacion">
+                                </div>
+                               
+                                  
+                                </div>
+                                <a onclick="registrarUsuario()" href="#" class="btn btn-primary btn-user btn-block">
+                                    Registerse
+                                </a>
+
+                          
+
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="login.html">¿Ya tienes una cuenta? ¡Inicia sesión!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button onclick="eliminarUsuario(id)">Try it</button>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="sb-admin-2.min.js"></script>
+
+    <script src="registrartipificacion.js"></script>
+
+
+</body>
+
+</html>
+
+
+<script>
+
+    function eliminarUsuario(id) { 
+    
+        if (!confirm('Desea eliminar este usuario')){
+    
+    return;
+        }
+    
+    const dbParam1 = JSON.stringify({table:"customers",limit:20});
+    const xmlhttp1 = new XMLHttpRequest();
+    xmlhttp1.onload = function() {
+      const myObj1 = JSON.parse(this.responseText);
+    
+    
+      let text1 = "<table border='1'>"
+      for (let x1 in myObj1) {
+    
+       
+    
+        //<button onclick="eliminarUsuario('+ myObj[x].id +')">eliminar1</button>
+    let eliminarBoton = '<button onclick="eliminarUsuario('+ myObj1[x1].id +')">eliminar</button>';
+    
+        text1 += "<tr><td>" + myObj1[x1].id + "</td><td>" + myObj1[x1].nombre + "</td><td>" + myObj1[x1].apellido + "</td><td>" + myObj1[x1].email + "</td><td>" + myObj1[x1].telefono + "</td>' <td> + eliminarBoton + </td> '</tr>";
+      
+    }
+      text1 += "</table>"    
+      document.getElementById("demo1").innerHTML = text1;
+    }
+    xmlhttp1.open("DELETE", "usuarios/" + 6);
+    xmlhttp1.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp1.send("x1=" + dbParam1);
+      
+    
+    
+    location.reload()
+    
+    alert(5656);
+    }

@@ -1,0 +1,403 @@
+
+<?
+  session_start();  
+?>
+
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="apgestion_archivos/filelist.xml">
+<link rel=Edit-Time-Data href="apgestion_archivos/editdata.mso">
+
+<link rel=themeData href="apgestion_archivos/themedata.thmx">
+<link rel=colorSchemeMapping href="apgestion_archivos/colorschememapping.xml">
+<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
+  <link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
+  <link rel="stylesheet" type="text/css" href="librerias/select2/css/select2.css">
+
+  <script src="librerias/jquery-3.2.1.min.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="librerias/bootstrap/js/bootstrap.js"></script>
+  <script src="librerias/alertifyjs/alertify.js"></script>
+  <script src="librerias/select2/js/select2.js"></script>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Encabezado Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 212.6pt right 425.2pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Pie de página Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 212.6pt right 425.2pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Texto de globo Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-fareast-language:EN-US;}
+span.TextodegloboCar
+	{mso-style-name:"Texto de globo Car";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Texto de globo";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.EncabezadoCar
+	{mso-style-name:"Encabezado Car";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Encabezado;}
+span.PiedepginaCar
+	{mso-style-name:"Pie de página Car";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Pie de página";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("apgestion_archivos/header.htm") fs;
+	mso-footnote-continuation-separator:url("apgestion_archivos/header.htm") fcs;
+	mso-endnote-separator:url("apgestion_archivos/header.htm") es;
+	mso-endnote-continuation-separator:url("apgestion_archivos/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-even-header:url("apgestion_archivos/header.htm") eh1;
+	mso-header:url("apgestion_archivos/header.htm") h1;
+	mso-even-footer:url("apgestion_archivos/header.htm") ef1;
+	mso-footer:url("apgestion_archivos/header.htm") f1;
+	mso-first-header:url("apgestion_archivos/header.htm") fh1;
+	mso-first-footer:url("apgestion_archivos/header.htm") ff1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2052"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ES style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+
+Escriba la cedula para imprimir: <input type="text" onkeyup="showUser(this.value)">
+
+<p class=MsoNormal style='margin-left:63.8pt'><span style='mso-fareast-language:
+ES;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0030__x0020_Imagen" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:105.75pt;height:79.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="apgestion_archivos/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=141 height=106
+src="apgestion_archivos/image002.png" v:shapes="_x0030__x0020_Imagen"><![endif]></span></p>
+
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif"'>Aprobación
+Sistema de Información<u><o:p></o:p></u></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+line-height:115%;font-family:"Arial","sans-serif"'><span
+style='mso-spacerun:yes'>        </span>Código de Aprobación:<o:p></o:p></span> <p class=MsoNormal id="txtHint1" ></p>   </p> 
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+line-height:115%;font-family:"Arial","sans-serif"'><span
+style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'>   </span>Cedula:<o:p></o:p></span></p>
+<p class=MsoNormal id="txtHint" >
+
+
+
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif"'>Descripción<o:p></o:p></span></b></p>
+<p class=MsoNormal id="txtHint2" >
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif";
+color:#A6A6A6;mso-themecolor:background1;mso-themeshade:166;mso-style-textfill-fill-color:
+#A6A6A6;mso-style-textfill-fill-themecolor:background1;mso-style-textfill-fill-alpha:
+100.0%;mso-style-textfill-fill-colortransforms:lumm=65000'>Sistema de
+Información<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;line-height:
+115%;font-family:"Arial","sans-serif";color:#A6A6A6;mso-themecolor:background1;
+mso-themeshade:166;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-themecolor:
+background1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+lumm=65000'>Av</span></b></span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;line-height:115%;font-family:"Arial","sans-serif";
+color:#A6A6A6;mso-themecolor:background1;mso-themeshade:166;mso-style-textfill-fill-color:
+#A6A6A6;mso-style-textfill-fill-themecolor:background1;mso-style-textfill-fill-alpha:
+100.0%;mso-style-textfill-fill-colortransforms:lumm=65000'> siempre viva 123<o:p></o:p></span></b></p>
+
+</div>
+
+
+<button type="submit" style='text-align:center'onclick='window.print();' name="boton" class="btn btn-warning" id="alerta" >IMPRIMIR</button>
+</body>
+
+</html>
+
+
+
+
+<script>
+
+
+
+
+
+
+  
+function showUser(str) {
+
+
+
+
+
+   if (str == "") {
+        document.getElementById("txtHint1").innerHTML = "";
+        return;
+    } else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint1").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","l1.php?q="+str,true);
+        xmlhttp.send();
+    }
+
+
+if (str == "") {
+        document.getElementById("txtHint2").innerHTML = "";
+        return;
+    } else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint2").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","l2.php?q="+str,true);
+        xmlhttp.send();
+    }
+
+
+
+
+
+
+
+
+
+
+
+    if (str == "") {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","gethint.php?q="+str,true);
+        xmlhttp.send();
+    }
+}
+
+</script>
